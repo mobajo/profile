@@ -1,39 +1,38 @@
 
 
 body {
-	background-color: #7C582E;
-	font-family: 'Open Sans', sans-serif;
+	background-color: #A8ACB6;
+	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
-	color: darkslategray;
+	color: white;
 }
 
 h1, h2, h3 {
-	font-family: 'Merriweather', serif;
-  color: #2B2118;
-  font-weight: 900;
+	font-family: font-family: 'Roboto', sans-serif;;
+  color: #C0B3A0;
+  font-weight: 700;
 }
 
 h1 {
-  font-size: 28px;
-  text-shadow: 6px 3px rgba(0, 0, 0, 0.1);
+  font-size: 35px;
 }
 
 h2 {
-  font-size: 23px;
+  font-size: 28px;
 }
 
 h3 {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 a {
   text-decoration: none;
   font-weight: bold;
-  color: #6B1407;
+  color: #C0B3A0;
 }
 
 a:hover {
-  color: #A02A18;
+  color: #E14658;
 }
 
 ul {
@@ -41,8 +40,13 @@ ul {
   padding: 0;
 }
 
+p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 #sidebar {
-  background-color: #2B2118;
+  background-color: #22252C;
   position: fixed;
   width: 120px;
   left: 0;
@@ -57,10 +61,10 @@ ul {
 
 .card {
   max-width: 700px;
-  background-color: #ECF0F1;
+  background-color: #22252C;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 3px rgba(192, 179, 160, 0.1);
   padding: 20px;
   margin: 20px;
 }
@@ -68,7 +72,7 @@ ul {
 .img-round {
   width: 200px;
   border-radius: 50%;
-  border: 5px solid rgba(0, 0, 0, 0.1);
+  border: 5px solid rgba(192, 179, 160, 0.5);
 }
 
 .img-movie {
@@ -79,17 +83,17 @@ ul {
   text-align: center;
 }
 
-.btn-brown {
-  background-color: #6B1407;
+.btn-github {
+  background-color: #E14658;
   color: white;
   font-weight: 500;
+  margin-top: 15px;
   padding: 10px;
   border-radius: 4px;
-  padding: 8px 12px
+  padding: 12px 18px
 }
 
-.btn-brown:hover {
-  background-color: #A02A18;
+.btn-github:hover {
   color: white;
 }
 
@@ -114,6 +118,7 @@ ul {
 .list-inline > li {
   display: inline-block;
   padding: 0px 20px;
+  margin: 30px;
 }
 
 @media (max-width: 960px) {
@@ -122,11 +127,17 @@ ul {
     width: 120px;
   }
 }
-@media (max-width: 720px) {
+@media (max-width: 750px) {
   /* For a screen < 720px, this CSS will be read */
   #sidebar {
     width: 120px;
   }
+
+  .list-inline > li {
+  display: block;
+  padding: 0px 20px;
+  margin-bottom: 50px;
+}
 }
 @media (max-width: 540px) {
   /* For a screen < 540px, this CSS will be read */
