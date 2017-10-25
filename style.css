@@ -1,37 +1,21 @@
-@media (max-width: 960px) {
-  /* For a screen < 960px, this CSS will be read */
-  .container {
-    width: 700px;
-  }
-}
-@media (max-width: 720px) {
-  /* For a screen < 720px, this CSS will be read */
-  .container {
-    width: 500px;
-  }
-}
-@media (max-width: 540px) {
-  /* For a screen < 540px, this CSS will be read */
-  .container {
-    width: 300px;
-  }
-}
+
 
 body {
-	background-color: #F7FFF7;
+	background-color: #7C582E;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
-	color: grey;
+	color: darkslategray;
 }
 
 h1, h2, h3 {
 	font-family: 'Merriweather', serif;
-  color: #606D75;
+  color: #2B2118;
   font-weight: 900;
 }
 
 h1 {
   font-size: 28px;
+  text-shadow: 6px 3px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
@@ -45,25 +29,35 @@ h3 {
 a {
   text-decoration: none;
   font-weight: bold;
-  color: #4ECDC4;
+  color: #6B1407;
 }
 
 a:hover {
-  color: #35918B;
+  color: #A02A18;
 }
 
-.fa-big {
-  font-size: 40px;
-  line-height: 1.6;
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-.container {
-  width: 500px;   /* This sets the width */
-  margin: 0 auto; /* This automatically sets left/right margins */
+#sidebar {
+  background-color: #2B2118;
+  position: fixed;
+  width: 120px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#page-content {
+  margin: 0px auto;
+  margin-left: 150px;
 }
 
 .card {
-  background: white;
+  max-width: 700px;
+  background-color: #ECF0F1;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
@@ -74,6 +68,7 @@ a:hover {
 .img-round {
   width: 200px;
   border-radius: 50%;
+  border: 5px solid rgba(0, 0, 0, 0.1);
 }
 
 .img-movie {
@@ -84,21 +79,32 @@ a:hover {
   text-align: center;
 }
 
-.btn-red {
-  background-color: #DD5555;
+.btn-brown {
+  background-color: #6B1407;
   color: white;
   font-weight: 500;
   padding: 10px;
   border-radius: 4px;
+  padding: 8px 12px
 }
 
-.btn-red:hover {
-  background-color: #FF2828;
+.btn-brown:hover {
+  background-color: #A02A18;
   color: white;
 }
 
 .td-padding {
   padding-left: 20px;
+}
+
+.sidebar-nav {
+  display: inline-block;
+  padding: 5px;
+}
+
+.sidebar-li {
+  margin-bottom: 50px;
+  padding: 0px;
 }
 
 .list-inline {
@@ -108,4 +114,37 @@ a:hover {
 .list-inline > li {
   display: inline-block;
   padding: 0px 20px;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  #sidebar {
+    width: 120px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  #sidebar {
+    width: 120px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  #sidebar {
+    display: none;
+  }
+
+  #page-content {
+    margin-left: 10px;
+  }
+
+  .list-inline {
+  padding-left: 0px;
+}
+
+.list-inline > li {
+  display: block;
+  padding: 0px 20px;
+  margin-bottom: 50px;
+}
 }
