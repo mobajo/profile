@@ -5,6 +5,7 @@ body {
   background-image: url("images/keyboard.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   height: 100vh;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
